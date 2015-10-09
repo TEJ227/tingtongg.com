@@ -90,7 +90,7 @@ public class LocalitySelectorFragment extends Fragment {
                 JSONObject location = weatherArray.getJSONObject(i);
                 String location_nm = location.getString(OWM_DESCRIPTION);
                 int location_id=location.getInt("location_id");
-                resultStrs[i] = location_nm ;//+ "\n id=" + location_id;
+                resultStrs[i] = location_nm + "\n id=" + location_id;
                 idArray[i] = location_id;
             }
             for (String s : resultStrs) {
